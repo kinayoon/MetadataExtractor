@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.kina.persistence.MetaDataMapper">
+
+    <resultMap id="ArtistVO" type="kr.kina.vo.ArtistVO">
+        <result column="artist" property="artist" />
+    </resultMap>
+
+    <resultMap id="AlbumVO" type="kr.kina.vo.AlbumVO">
+        <result column="albumid" property="albumid" />
+        <result column="album" property="album" />
+        <result column="artist" property="artist" />
+        <result column="genre" property="genre" />
+        <result column="releasedate" property="releasedate" />
+    </resultMap>
+
+    <resultMap id="SongVO" type="kr.kina.vo.SongVO">
+        <result column="albumid" property="albumid" />
+        <result column="album" property="album" />
+        <result column="title" property="title" />
+        <result column="artist" property="artist" />
+        <result column="duration" property="duration" />
+        <result column="tracknum" property="tracknum" />
+        <result column="filename" property="filename" />
+        <result column="filepath" property="filepath" />
+    </resultMap>
+
+   <resultMap id="ParamMap" type="java.util.Map">
+       <result column="album" property="album" />
+       <result column="artist" property="artist" />
+       <result column="genre" property="genre" />
+   </resultMap>
+
+    <insert id="artist" parameterType="kr.kina.vo.ArtistVO">
+        insert into artists
+        values (#{artist})
+    </insert>
+
+    <insert id="album" parameterType="kr.kina.vo.AlbumVO">
+        insert into album
+        (album, artist, genre, releasedate)
+        values
+        (#{album}, #{artist}, #{genre}, #{releasedate})
+    </insert>
+
+    <insert id="song" parameterType="kr.kina.vo.SongVO">
+        insert into song
+        values
+        (#{albumid}, #{album}, #{title}, #{artist}, #{duration}, #{tracknum}, #{releaseDate}, #{filepath})
+    </insert>
+
+    <select id="select" parameterType="java.util.Map" resultType="int" >
+        select albumid from
+        album
+        where album = #{album}
+        and
+        artist= #{artist}
+        and
+        genre = #{genre}
+    </select>
+
+    <select id="selectLastId" resultType="int">
+        select * from
+        album
+        order by
+        albumid desc limit 1;
+    </select>
+
+    <insert id="addAlbum" parameterType="kr.kina.vo.AlbumVO">
+        insert into album
+        (album, artist, genre, releasedate)
+        values
+        (#{album}, #{artist}, #{genre}, #{releasedate})
+    </insert>
+
+
+</mapper>
