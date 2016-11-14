@@ -10,15 +10,17 @@
 
 
 ## Table of Contents
-  1. Features 
-  2. Development Environment 
-  3. Preview
-  4. Architecture
+   1. Features
+   2. Development Environment 
+   3. Preview
+   4. Architecture
   
 ## 1. Features
-  모든 데이터를 담고 있는 최상위 디렉토리에서 재귀함수를 사용하여 각 파일을 찾아낸 후, mp3파일에 담긴 메타데이터를 파싱합니다.
-  파싱한 데이터는 엑셀파일로 만들어지고, 이 데이터는 그대로 MySQL에 삽입됩니다.
-  이렇게 DB에 저장된 데이터는 'Music Finder' 웹 어플리케이션에서 사용됩니다.
+  - 모든 데이터를 담고 있는 최상위 디렉토리에서 재귀함수를 사용하여 각 파일을 찾아낸 후,
+   - mp3파일에 담긴 메타데이터를 파싱합니다.
+   - 파싱한 데이터는 엑셀파일로 만들어지고,
+   - 이 데이터는 그대로 MySQL에 삽입됩니다.
+   - 이렇게 DB에 저장된 데이터는 'Music Finder' 웹 어플리케이션에서 사용됩니다.
   
 ## 2.Development Environment
      Intellij Community Edition (ver.2016.2.4)   
