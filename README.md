@@ -36,4 +36,5 @@
      - tika-core-1.8  
 
 ## 3. Architecture
-  <img width="760" height="520">![architecture](https://cloud.githubusercontent.com/assets/21224368/20290154/ac2fab32-ab21-11e6-8ed1-c410e6bf7d88.jpg)</img>
+  ![](https://cloud.githubusercontent.com/assets/21224368/20290154/ac2fab32-ab21-11e6-8ed1-c410e6bf7d88.jpg)
+  ![](https://cloud.githubusercontent.com/assets/21224368/20290356/e53d941a-ab22-11e6-8244-ee3666d9ff24.JPG)
