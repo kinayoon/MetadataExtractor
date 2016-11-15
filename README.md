@@ -12,8 +12,7 @@
 ## Table of Contents
    1. Features
    2. Development Environment 
-   3. Preview
-   4. Architecture
+   3. Architecture
   
 ## 1. Features
   - 모든 데이터를 담고 있는 최상위 디렉토리에서 재귀함수를 사용하여 각 파일을 찾아낸 후,
@@ -36,8 +35,5 @@
      - poi-3.15
      - tika-core-1.8  
 
-## 3. preview
-
-
-## 4. architecture
-  
+## 3. Architecture
+  <img width="760" height="520">![architecture](https://cloud.githubusercontent.com/assets/21224368/20290154/ac2fab32-ab21-11e6-8ed1-c410e6bf7d88.jpg)</img>
