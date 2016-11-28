@@ -22,11 +22,11 @@
    - 이렇게 DB에 저장된 데이터는 'Music Finder' 웹 어플리케이션에서 사용됩니다.
   
 ## 2.Development Environment
-   - Intellij Community Edition (ver.2016.2.4)
-   - Window7 (64 bit)
-   - Java SE(Standard Edition)
-   - Java 1.8
-   - MySQL 5.1.60
+   - IDE : Intellij Community Edition (ver.2016.2.4)
+   - OS : Window7 (64 bit)
+   - Platform : Java SE(Standard Edition)
+   - Language : Java 1.8
+   - DB : MySQL 5.1.60
    
    - Using External Libraries
      - dom4j-1.6
